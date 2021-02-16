@@ -29,10 +29,10 @@ for name, group in hp:
     print group
 print('\n')
 print"****Highest Product in Kerala*****"
-print(s1.iloc[[0]])
+print s1.iloc[[0]]
 print('\n')
 print"****Highest Product in Delhi*****"
-print(s1.iloc[[2]])
+print s1.iloc[[2]]
 print('\n')
 print"****Highest Product in Chennai*****"
-print(s1.iloc[[4]])
+print s1.iloc[[4]]
