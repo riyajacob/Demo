@@ -33,12 +33,5 @@ for name, group in highest_product:
     print name
     print group
 print('\n')
-loca='Chennai','Kerala','Delhi'
-print"****Highest Product in {0}*****".format('Chennai')
-print sorted.iloc[[0]]
-print('\n')
-print"****Highest Product in Delhi*****"
-print sorted.iloc[[2]]
-print('\n')
-print"****Highest Product in Chennai*****"
-print sorted.iloc[[4]]
+print"****Highest Product in Each Area*****"
+print sorted.iloc[[4,2,0]]
