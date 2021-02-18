@@ -33,7 +33,8 @@ for name, group in highest_product:
     print name
     print group
 print('\n')
-print"****Highest Product in Kerala*****"
+loca='Chennai','Kerala','Delhi'
+print"****Highest Product in {0}*****".format('Chennai')
 print sorted.iloc[[0]]
 print('\n')
 print"****Highest Product in Delhi*****"
