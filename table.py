@@ -15,7 +15,6 @@ print('\n')
 print"*****Bottom 5 Products******"
 print(sorted_descending.tail(5))
 
-
 print('\n')
 #finding highest product in each area
 print"*****Grouped by area******"
@@ -25,8 +24,6 @@ n=pd.DataFrame(data)
 product_area=n[['Product_ID','Area','Quantity']]
 #sorting quantity in descending order
 sorted=product_area.sort_values(by=['Quantity'],ascending=False)
-
-
 
 highest_product=sorted.groupby('Area')
 for name, group in highest_product:
