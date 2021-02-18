@@ -1,4 +1,5 @@
 #finding top 5, bottom 5 and highest products in each area
+#Created by:Treesa Mary K J on:18-02-2021
 
 import pandas as pd
 
@@ -14,21 +15,14 @@ print('\n')
 #finding bottom 5 products
 print"*****Bottom 5 Products******"
 print(sorted_descending.tail(5))
-
 print('\n')
-#finding highest product in each area
-print"*****Grouped by area******"
 
+#finding highest product in each area
 n=pd.DataFrame(data)
 #accessing product_ID,area and quantity
-product_area=n[['Product_ID','Area','Quantity']]
+product_area=n[['Product_ID','Quantity','Area']]
 #sorting quantity in descending order
 sorted=product_area.sort_values(by=['Quantity'],ascending=False)
-
 highest_product=sorted.groupby('Area')
-for name, group in highest_product:
-    print name
-    print group
-print('\n')
 print"****Highest Product in Each Area*****"
 print sorted.iloc[[4,2,0]]
