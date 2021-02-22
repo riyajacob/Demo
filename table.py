@@ -11,9 +11,6 @@ def main():
     top()
     highest()
 
-
-#logging.info('This will get logged')
-
 def top():
     global sorted_descending
     sorted_descending=df.sort_values(by=['Quantity'],ascending=False)
